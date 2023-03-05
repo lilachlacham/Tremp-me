@@ -11,4 +11,6 @@
     <string name="today">Today</string>
     <string name="login">Login</string>
     <string name="not_registered_yet_click_here_to_register">Not registered yet? click here to register</string>
+    <string name="available_rides">My Rides</string>
+    <string name="rides_history">Rides History</string>
 </resources>
