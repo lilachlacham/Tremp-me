@@ -13,7 +13,20 @@
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="38dp" />
 
         <EditText
             android:id="@+id/et_userName_register"
@@ -21,6 +34,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:hint="@string/Register_etUserName"
             android:inputType="textPersonName" />
 
@@ -31,6 +47,9 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/Register_etNickName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:inputType="textPersonName" />
 
         <EditText
@@ -39,8 +58,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPassword"
-            android:hint="@string/register_etPassword" />
+            android:hint="@string/register_etPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/et_validation_password_register"
@@ -48,28 +70,25 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:hint="@string/Register_etPassword_Validation" />
 
         <Button
             android:id="@+id/register_button"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:text="@string/register_btn"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="@string/register_btn" />
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="264dp"
-        android:layout_height="175dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteY="38dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
