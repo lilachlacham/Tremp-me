@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TrempMe</string>
+    <string name="login_etPassword">Password</string>
+    <string name="login_etUserName">User Name</string>
+    <string name="Register_etPassword_Validation">Validate Password</string>
+    <string name="register_btn">Register</string>
+    <string name="register_etPassword">Password</string>
+    <string name="Register_etNickName">Nick Name</string>
+    <string name="Register_etUserName">User Name</string>
+</resources>
