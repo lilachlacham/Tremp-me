@@ -24,5 +24,18 @@ public class StartActivity extends AppCompatActivity {
             Intent i = new Intent(this,HistoryRidesActivity.class);
             startActivity(i);
         });
+
+        binding.myCarsBtn.setOnClickListener(v -> {
+            Intent i = new Intent(this,MyCarsActivity.class);
+            startActivity(i);
+        });
+        binding.needRideBtn.setOnClickListener(v -> {
+            Intent i = new Intent(this,GetRideActivity.class);
+            startActivity(i);
+        });
+        binding.offerRideBtn.setOnClickListener(v -> {
+            Intent i = new Intent(this,OfferRideActivity.class);
+            startActivity(i);
+        });
     }
 }

@@ -25,6 +25,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="50dp"
             android:rotationY="15"
+            android:hint=""
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +34,7 @@
             app:srcCompat="@drawable/logo" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="5dp"
@@ -51,7 +52,7 @@
                 tools:layout_editor_absoluteY="208dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/from_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -59,10 +60,22 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Bar Ilan University"
+                android:hint=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="255dp" />
+            <ImageButton
+                android:id="@+id/swap_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-40dp"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/swap" />
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,7 +96,7 @@
                 tools:layout_editor_absoluteY="266dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/to_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
